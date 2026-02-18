@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Collier_Austin_MiniProject.py
+Austin_MiniProject.py
 
 ===========================================================
 ALGORITHM (Step-by-step)
@@ -51,14 +51,13 @@ import arcpy
 
 # ===========================================================
 # REQUIRED INPUTS (ONLY CHANGE THESE 3 VARIABLES)
+# Update the following paths to match your local system before running the script.
 # ===========================================================
-INPUT_GDB = r"C:\Users\scollier\Downloads\Austin_Data\Austin.gdb"
-OUTPUT_FOLDER = r"C:\Users\scollier\Downloads\Austin_Output"
-CSV_NAME_OR_PATH = r"SchoolZone_Streets_Speeds.csv"
+INPUT_GDB = r"C:\Path\To\Austin_Data.gdb"
+OUTPUT_FOLDER = r"C:\Path\To\Output_Folder"
+CSV_NAME_OR_PATH = "SchoolZone_Streets_Speeds.csv"
 # ===========================================================
 
-
-# -------------------------
 # Progress message helper
 # -------------------------
 def msg(text):
@@ -346,3 +345,4 @@ if __name__ == "__main__":
         except Exception:
             pass
         raise
+
